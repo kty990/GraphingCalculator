@@ -54,6 +54,7 @@ html, body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .button {
@@ -61,11 +62,15 @@ html, body {
     border-radius: 5px;
     width: calc(var(--vw, 1vw) * 2);
     height: calc(var(--vw, 1vw) * 1);
-    padding-top: calc(var(--vh, 1vh) * 1);
-    padding-bottom: calc(var(--vh, 1vh) * 1);
     text-align: center;
+    margin: 0;
     margin-left: 1px;
     margin-right: 1px;
+    padding: 0;
+    padding-top: calc(var(--vh, 1vh) * 1);
+    padding-bottom: calc(var(--vh, 1vh) * 0.5);
+
+    font-size: calc(var(--vwh, 1vh) * 1.5);
 }
 
 .button:hover {
